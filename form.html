@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="./static/contacts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- Header and Hamburger -->
+
+  <header class="header">
+      <nav class="navbar h-nav-resp">
+        <div class="nav-menu h-nav-resp">
+          <ul class="nav-list v-class-resp">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href="./form.html">Contact US</a></li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+  <!-- Form Container -->
+
+  <div class="form-container">
+    <div class="contact-form">
+      <h1>Contact Us</h1>
+      <form action="/contact" method="post">
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <input type="number" name="age" id="age" placeholder="Enter your age">
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your message"></textarea>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Area -->
+
+  <footer class="footer">
+    <div class="follow">
+      <h1>Follow Us On</h1>
+      <a href="www.linkedin.com/in/nandita-trivedi-Psychologist-LifeSkillsTrainer"><i
+          class="fa fa-linkedin-square fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UCp2mzzmmH9dLxSKwVRWIjgg"><i class="fa fa-youtube-play fa-2x"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100001205734219"><i class="fa fa-facebook-square fa-2x"></i></a>
+      <a href="https://instagram.com/emotionalhealthcounselor?utm_medium=copy_link"><i
+          class="fa fa-instagram fa-2x"></i></a>
+    </div>
+    <div class="contacts">
+      <h1 class="cont">Contacts</h1>
+      <i class="fa fa-phone fa-2x"></i>
+      <p class="add">+91 8839481503, 9752944147</p>
+      <i class="fa fa-map-marker fa-2x"></i>
+      <p class="add">Sector 3, Vinay Nagar, Gwalior</p>
+    </div>
+    <h3>Copyright @2021 MentalHealthCounselling All Rights Reserved</h3>
+  </footer>
+
+  <!-- Script -->
+
+  <script src="../static/form.js"></script>
+
+</body>
+</html>

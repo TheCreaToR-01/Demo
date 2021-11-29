@@ -1,0 +1,238 @@
+/* Fonts Section */
+@import url("https://fonts.googleapis.com/css2?family=Yaldevi:wght@600&display=swap");
+
+/* Stylesheet */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: blueviolet;
+}
+/* Navbar and Hamburger  */
+
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav-list li {
+  margin: 20px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+  padding: 14px;
+  font-size: 18px;
+  font-family: "Yaldevi";
+}
+.nav-list li a:hover {
+  background: rgb(63, 61, 61);
+  color: white;
+}
+.hamburger {
+  border: 2px solid black;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  padding: 2px;
+  background: rgb(255, 251, 251);
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(255, 249, 249);
+}
+.hamburger:hover {
+  background: rgb(221, 215, 204);
+}
+
+
+/* Form Code */
+
+.form-container {
+  width: 100vw;
+  height: 100vh;
+}
+.form-container > h1 {
+  margin: 15px;
+}
+.contact-form {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Yaldevi";
+}
+form {
+  padding: 15px;
+  border-radius: 8px;
+}
+input,textarea {
+  width: 800px;
+  text-align: center;
+  display: block;
+  margin: 15px 0px;
+  font-family: "Yaldevi";
+  border-radius: 8px;
+  padding: 8px;
+  outline: none;
+}
+.btn {
+  width: 820px;
+  margin: 10px 0px;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 8px;
+  font-family: "Yaldevi";
+}
+.btn:hover {
+  background: rgb(6, 18, 73);
+  color: white;
+}
+
+/* Footer Area */
+
+.footer {
+  margin-top: 0px;
+  background: rgb(19, 19, 19);
+  color: white;
+  font-family: "Yaldevi";
+}
+.follow {
+  text-align: center;
+  height: 90px;
+  font-family: var(--font2);
+  padding: 15px;
+}
+.footer > h3 {
+  text-align: center;
+  font-family: var(--font4);
+}
+i {
+  margin: 8px;
+  cursor: pointer;
+  color: white;
+}
+.contacts {
+  width: 520px;
+  margin: auto;
+  padding: 8px;
+}
+p{
+  display: inline-block;
+}
+.contacts > i {
+  border-right: 2px solid white;
+  padding: 8px;
+}
+.cont {
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 870px) {
+  input,
+  textarea {
+    width: 500px;
+  }
+  .btn {
+    width: 520px;
+  }
+}
+
+/* Media Query */
+
+@media only screen and (max-width:700px){
+ .nav-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.9s ease-in-out;
+  }
+  .navlist li a:hover {
+    padding: 35px;
+  }
+  .navbar {
+    height: 300px;
+    transition: all 0.9s ease-in-out;
+  }
+  .hamburger {
+    display: block;
+    background: black;
+  }
+  .h-nav-resp {
+    height: 70px;
+  }
+  .v-class-resp {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+ input,
+  textarea {
+    width: 300px;
+  }
+  .btn {
+    width: 320px;
+  }
+  .footer > h3 {
+    text-align: center;
+    font-family: var(--font4);
+    font-size: 18px;
+  }
+  .contacts {
+    width: 270px;
+  }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 360px) {
+  input,
+  textarea {
+    width: 200px;
+  }
+  .btn {
+    width: 220px;
+  }
+  .footer > h3 {
+    text-align: center;
+    font-family: "Yaldevi";
+    font-size: 15px;
+  }
+  .contacts {
+    width: 240px;
+  }
+  .add {
+    font-size: 12px;
+    display: inline-block;
+  }
+}
