@@ -89,8 +89,8 @@
   height: 615px;
 }
 .firstSection {
-  width: 450px;
-  height: 400px;
+  width: 500px;
+  height: 450px;
   position: relative;
   top: 8%;
   left: 3%;
@@ -100,24 +100,24 @@
   display: flex;
 }
 .h1 {
-  font-size: 80px;
+  font-size: 70px;
   color: rgb(2, 2, 2);
   font-family: var(--font1);
   font-weight: bold;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 5px 0px 0px;
 }
 .h2 {
-  font-size: 80px;
+  font-size: 70px;
   color: rgb(26 175 194);
   font-family: var(--font1);
-  word-spacing: 8px;
+  word-spacing: 4px;
 }
 .firstSection-para {
   text-align: justify;
-  font-size: 20px;
+  font-size: 25px;
   margin: 0px 0px 15px 5px;
   font-family: var(--font3);
-  width: 300px;
+  width: 400px;
 }
 .firstSection-btn1 {
   padding: 10px;

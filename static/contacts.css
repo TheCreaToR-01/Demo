@@ -8,7 +8,7 @@
   padding: 0px;
 }
 body{
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 /* Navbar and Hamburger  */
 
@@ -67,9 +67,16 @@ body{
 .form-container {
   width: 100vw;
   height: 100vh;
+  background-color: blueviolet;
 }
 .form-container > h1 {
   margin: 15px;
+
+}
+.location > h1{
+  margin: 15px;
+  font-family: "Yaldevi";
+  text-align: center;
 }
 .contact-form {
   height: 100vh;
@@ -92,6 +99,7 @@ input,textarea {
   border-radius: 8px;
   padding: 8px;
   outline: none;
+  text-transform: uppercase;
 }
 .btn {
   width: 820px;
@@ -106,6 +114,10 @@ input,textarea {
   color: white;
 }
 
+
+.location > iframe{
+  width: 100vw;
+}
 /* Footer Area */
 
 .footer {
@@ -130,7 +142,7 @@ i {
   color: white;
 }
 .contacts {
-  width: 520px;
+  width: 560px;
   margin: auto;
   padding: 8px;
 }
